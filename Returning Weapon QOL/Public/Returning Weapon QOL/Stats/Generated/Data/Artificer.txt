@@ -1,4 +1,4 @@
-// ==================================== Thrown Weapon Pack ====================================
+// ==================================== Artificer class and all subclasses ====================================
 
 new entry "INFUSION_RETURNING_WEAPON"
 type "StatusData"
