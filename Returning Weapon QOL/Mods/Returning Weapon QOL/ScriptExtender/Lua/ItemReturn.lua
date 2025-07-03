@@ -12,12 +12,7 @@ local NULL_UUID = "00000000-0000-0000-0000-000000000000"
 -- quick “returning” test for re-equip step
 local function IsReturning(it)
   if not it then return false end
-  return  Osi.HasActiveStatus(it,"WEAPON_BOND")                 ==1
-      or Osi.HasActiveStatus(it,"MAG_THROWING_RETURN_TO_OWNER") ==1
-      or Osi.HasActiveStatus(it,"MAG_THE_THORNS_WEAPON_BOND")   ==1
-      or Osi.HasActiveStatus(it,"ThrownReturn")                 ==1
-      or Osi.HasActiveStatus(it,"INFUSION_RETURNING_WEAPON")    ==1
-      or Osi.HasActiveStatus(it,"RR_THROWING_RETURN_TO_OWNER")  ==1
+  return Osi.IsTagged(it, "b5b9303d-a3cb-435b-b8d6-a5560cd48815") == 1
 end
 
 local function ClearVars(c)
