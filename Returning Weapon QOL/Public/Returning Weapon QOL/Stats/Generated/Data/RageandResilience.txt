@@ -1,9 +1,8 @@
+// ==================================== Rage and Resilience - Barbarian Equipment ====================================
+
 new entry "RR_THROWING_RETURN_TO_OWNER"
 type "StatusData"
 data "StatusType" "BOOST"
-data "DisplayName" "h8d32f6b2g3ee5g45c1gacb7gebb38311b009;1"
-data "Description" "h8d32f6b2g3ee5g45c1gacb7gebb38311b010;1"
-data "Icon" "Spell_Evocation_SpiritualWeapon_Spear"
-data "StackId" "RR_THROWING_RETURN_TO_OWNER"
-data "Boosts" ""
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+using "RR_THROWING_RETURN_TO_OWNER"
+// data "Boosts" "ItemReturnToOwner()"
+data "Boosts" "Tag(RETURNING_ITEM)"
