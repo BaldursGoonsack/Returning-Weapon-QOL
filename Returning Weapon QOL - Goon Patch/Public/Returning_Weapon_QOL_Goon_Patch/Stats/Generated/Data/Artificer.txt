@@ -1,0 +1,8 @@
+// ==================================== Artificer class and all subclasses ====================================
+
+new entry "INFUSION_RETURNING_WEAPON"
+type "StatusData"
+data "StatusType" "BOOST"
+using "INFUSION_RETURNING_WEAPON"
+// data "Boosts" "WeaponEnchantment(1);WeaponProperty(Magical);ItemReturnToOwner()"
+data "Boosts" "WeaponEnchantment(1);WeaponProperty(Magical);Tag(RETURNING_ITEM)"

@@ -1,0 +1,8 @@
+// ==================================== Rage Queen Barbarian Gear ====================================
+
+new entry "CL_RageQueen_ThrowAxe"
+type "Weapon"
+// using "WPN_Battleaxe"
+using "CL_RageQueen_ThrowAxe"
+// data "DefaultBoosts" "ItemReturnToOwner();WeaponEnchantment(3);WeaponProperty(Magical);"
+data "DefaultBoosts" "Tag(RETURNING_ITEM);WeaponEnchantment(3);WeaponProperty(Magical)"

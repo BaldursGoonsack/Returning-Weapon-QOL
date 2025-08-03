@@ -1,0 +1,8 @@
+// ==================================== Thrown Weapon Pack ====================================
+
+new entry "ThrownReturn"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ThrownReturn"
+// data "Boosts" "ItemReturnToOwner()"
+data "Boosts" "Tag(RETURNING_ITEM)"

@@ -1,0 +1,44 @@
+// new entry "MAG_THROWING_RETURN_TO_OWNER"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// // Homing Weapon
+// data "DisplayName" "h7ece2436g3cc3g4890gbfa3g09e5098a2759;2"
+// // This weapon will return to its owner when thrown.
+// data "Description" "hb6e173c2gc7e1g4d11gb5d0g2a9567350359;2"
+// data "Icon" "GenericIcon_Intent_Utility"
+// data "StackId" "MAG_THROWING_RETURN_TO_OWNER"
+// data "Boosts" ""
+// data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+
+// new entry "MAG_THE_THORNS_WEAPON_BOND"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// data "DisplayName" "hcf8ca805g526fg4d57gbe2bg4a765087483c;2"
+// data "Description" "hbb94f893g8fd0g414fg97dfg28ffbda5c54c;3"
+// data "Icon" "Action_WeaponBond"
+// data "StackId" "WEAPON_BOND"
+// data "StatusEffectOverride" ""
+// data "StackPriority" "10"
+// data "StackType" "Ignore"
+// data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting"
+// data "StatusGroups" ""
+// data "Boosts" "CannotBeDisarmed()"
+// data "IsUnique" "1"
+
+// new entry "WEAPON_BOND"
+// type "StatusData"
+// data "StatusType" "BOOST"
+// // Bound Weapon
+// data "DisplayName" "hcf8ca805g526fg4d57gbe2bg4a765087483c;2"
+// // Ritually bound to its wielder. <br><br>The weapon can't be knocked out of the wielder's hand, and automatically returns to the wielder when <LSTag Type="Spell" Tooltip="Throw_Throw">Thrown</LSTag>.
+// data "Description" "hbb94f893g8fd0g414fg97dfg28ffbda5c54c;3"
+// data "Icon" "Action_WeaponBond"
+// data "StatusEffectOverride" "f1c5a7d3-c966-4d7f-87b7-376f1e64edbd"
+// data "StackId" "WEAPON_BOND"
+// data "Boosts" "CannotBeDisarmed()"
+// data "StatusGroups" "SG_RemoveOnRespec"
+// data "IsUnique" "1"
+
+
+
+

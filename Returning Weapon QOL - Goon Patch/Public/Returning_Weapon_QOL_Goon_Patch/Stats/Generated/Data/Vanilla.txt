@@ -1,0 +1,93 @@
+
+// ==================================== Slinging Shoes ====================================
+// Wiki: Much like the Homing Weapons, the Slinging Shoes automatically equip themselves onto the thrower when they return. If the thrower has a different item of Footwear equipped when throwing the Slinging Shoes, it is unequipped in favor of these.
+// TODO: Let the shoes re-equip
+
+// new entry "MAG_Projectile_Shoes"
+// type "Armor"
+// using "ARM_Magic_Shoes"
+// using "MAG_Projectile_Shoes"
+// data "DefaultBoosts" "ItemReturnToOwner()"
+// data "DefaultBoosts" "Tag(RETURNING_ITEM)"
+
+// ==================================== Homing Weapon ====================================
+
+new entry "MAG_THROWING_RETURN_TO_OWNER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MAG_THROWING_RETURN_TO_OWNER"
+// data "Boosts" "ItemReturnToOwner()"
+data "Boosts" "Tag(RETURNING_ITEM)"
+
+// ==================================== Bound Weapon ====================================
+
+new entry "WEAPON_BOND"
+type "StatusData"
+data "StatusType" "BOOST"
+using "WEAPON_BOND"
+// data "Boosts" "CannotBeDisarmed();ItemReturnToOwner()"
+data "Boosts" "CannotBeDisarmed();Tag(RETURNING_ITEM)"
+
+// ==================================== Pact Weapon ====================================
+
+new entry "PACT_BLADE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "PACT_BLADE"
+// data "Boosts" "WeaponProperty(Magical);IntrinsicSummonerProficiency();IntrinsicSourceProficiency();ItemReturnToOwner();Attribute(InventoryBound);WeaponAttackRollAbilityOverride(Charisma);CannotBeDisarmed()"
+data "Boosts" "WeaponProperty(Magical);IntrinsicSummonerProficiency();IntrinsicSourceProficiency();Tag(RETURNING_ITEM);Attribute(InventoryBound);WeaponAttackRollAbilityOverride(Charisma);CannotBeDisarmed()"
+
+// ==================================== Wild Magic: Weapon Infusion ====================================
+
+new entry "WILD_MAGIC_BARBARIAN_WEAPON_INFUSION"
+type "StatusData"
+data "StatusType" "BOOST"
+using "WILD_MAGIC_BARBARIAN_WEAPON_INFUSION"
+// data "Boosts" "ItemReturnToOwner();WeaponProperty(Thrown);WeaponProperty(Light);WeaponDamage(1d6,Force)"
+data "Boosts" "Tag(RETURNING_ITEM);WeaponProperty(Thrown);WeaponProperty(Light);WeaponDamage(1d6,Force)"
+
+// ==================================== Elemental Cleaver ====================================
+
+new entry "ELEMENTAL_CLEAVER_ACID"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ELEMENTAL_CLEAVER_ACID"
+// data "Boosts" "ItemReturnToOwner();WeaponProperty(Thrown);WeaponDamage(1d6,Acid)"
+data "Boosts" "Tag(RETURNING_ITEM);WeaponProperty(Thrown);WeaponDamage(1d6,Acid)"
+
+new entry "ELEMENTAL_CLEAVER_COLD"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ELEMENTAL_CLEAVER_COLD"
+// data "Boosts" "ItemReturnToOwner();WeaponProperty(Thrown);WeaponDamage(1d6,Cold)"
+data "Boosts" "Tag(RETURNING_ITEM);WeaponProperty(Thrown);WeaponDamage(1d6,Cold)"
+
+new entry "ELEMENTAL_CLEAVER_FIRE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ELEMENTAL_CLEAVER_FIRE"
+// data "Boosts" "ItemReturnToOwner();WeaponProperty(Thrown);WeaponDamage(1d6,Fire)"
+data "Boosts" "Tag(RETURNING_ITEM);WeaponProperty(Thrown);WeaponDamage(1d6,Fire)"
+
+new entry "ELEMENTAL_CLEAVER_LIGHTNING"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ELEMENTAL_CLEAVER_LIGHTNING"
+// data "Boosts" "ItemReturnToOwner();WeaponProperty(Thrown);WeaponDamage(1d6,Lightning)"
+data "Boosts" "Tag(RETURNING_ITEM);WeaponProperty(Thrown);WeaponDamage(1d6,Lightning)"
+
+new entry "ELEMENTAL_CLEAVER_THUNDER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ELEMENTAL_CLEAVER_THUNDER"
+// data "Boosts" "ItemReturnToOwner();WeaponProperty(Thrown);WeaponDamage(1d6,Thunder)"
+data "Boosts" "Tag(RETURNING_ITEM);WeaponProperty(Thrown);WeaponDamage(1d6,Thunder)"
+
+// ==================================== Potential custom variants of Elemental Cleaver ====================================
+
+new entry "ELEMENTAL_CLEAVER_POISON"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ELEMENTAL_CLEAVER_POISON"
+// data "Boosts" "ItemReturnToOwner();WeaponProperty(Thrown);WeaponDamage(1d6,Thunder)"
+data "Boosts" "Tag(RETURNING_ITEM);WeaponProperty(Thrown);WeaponDamage(1d6,Poison)"

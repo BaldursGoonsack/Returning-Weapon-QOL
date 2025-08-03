@@ -1,0 +1,8 @@
+// ==================================== Rage and Resilience - Barbarian Equipment ====================================
+
+new entry "RR_THROWING_RETURN_TO_OWNER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RR_THROWING_RETURN_TO_OWNER"
+// data "Boosts" "ItemReturnToOwner()"
+data "Boosts" "Tag(RETURNING_ITEM)"
